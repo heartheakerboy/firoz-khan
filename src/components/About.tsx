@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Code, Cpu, Gauge, Search, ShieldCheck, MapPin, Building2, CheckCircle } from "lucide-react";
 import { PERSONAL_INFO } from "@/data/portfolioData";
 
@@ -47,6 +48,30 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           {/* Left Column: Narrative Bio */}
           <div className="lg:col-span-6 space-y-6 text-slate-300 text-base leading-relaxed">
+            {/* Real Portrait Card */}
+            <div className="flex items-center gap-4 p-4 rounded-2xl bg-surface border border-surface-border">
+              <div className="relative flex-shrink-0">
+                <div className="w-20 h-20 rounded-2xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-cyan-400 p-[2px] shadow-lg shadow-indigo-500/30">
+                  <Image
+                    src="/firoz-khan.webp"
+                    alt="Firoz Khan — Full-Stack Developer"
+                    width={80}
+                    height={80}
+                    className="w-full h-full object-cover rounded-2xl"
+                  />
+                </div>
+                <span className="absolute -bottom-1 -right-1 flex h-3.5 w-3.5">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-emerald-500 border-2 border-[#10131E]"></span>
+                </span>
+              </div>
+              <div>
+                <h3 className="text-lg font-heading font-bold text-white tracking-tight">Firoz Khan</h3>
+                <p className="text-xs font-mono text-indigo-400">Full-Stack Developer &amp; Studio Founder</p>
+                <p className="text-xs text-slate-400 mt-1">Palghar, Maharashtra, India • Available for Client Work</p>
+              </div>
+            </div>
+
             <p className="text-lg text-slate-200 font-normal leading-relaxed">
               Hello! I am <strong className="text-white font-semibold">Firoz Khan</strong>, a full-stack web developer based in{" "}
               <strong className="text-white font-medium">Palghar, Maharashtra, India</strong>. I specialize in designing and engineering custom websites, web applications, and digital systems that operate at lightning speed and consistently generate business results.

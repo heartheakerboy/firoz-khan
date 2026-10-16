@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function DeveloperIllustration() {
   return (
     <div className="relative w-full max-w-lg mx-auto">
@@ -27,23 +29,17 @@ export default function DeveloperIllustration() {
         {/* Developer Profile Header inside Terminal */}
         <div className="pt-4 pb-3 flex items-center gap-4 relative z-10">
           <div className="relative flex-shrink-0">
-            {/* Custom stylized Avatar Illustration */}
-            <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-indigo-600 via-purple-600 to-cyan-400 p-[2px] shadow-lg shadow-indigo-500/30">
+            {/* Real photo with glowing border */}
+            <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-cyan-400 p-[2px] shadow-lg shadow-indigo-500/30">
               <div className="w-full h-full rounded-2xl bg-[#0F1322] flex items-center justify-center overflow-hidden relative">
-                <svg
-                  className="w-10 h-10 text-indigo-300"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                  <circle cx="12" cy="7" r="4" />
-                </svg>
-                {/* Visual tech glasses / headset accent */}
-                <div className="absolute inset-0 bg-gradient-to-t from-indigo-500/20 via-transparent to-transparent pointer-events-none" />
+                <Image
+                  src="/firoz-khan.webp"
+                  alt="Firoz Khan — Full-Stack Developer"
+                  width={64}
+                  height={64}
+                  className="w-full h-full object-cover rounded-2xl"
+                  priority
+                />
               </div>
             </div>
             <div className="absolute -bottom-1 -right-1 bg-indigo-600 rounded-md p-0.5 text-[9px] font-mono font-bold text-white px-1 shadow">
