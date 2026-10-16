@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://fkdigitalmedia.com/sitemap.xml",
-    host: "https://fkdigitalmedia.com",
+    sitemap: "https://firoz-khan.vercel.app/sitemap.xml",
+    host: "https://firoz-khan.vercel.app",
   };
 }

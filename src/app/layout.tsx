@@ -29,7 +29,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://fkdigitalmedia.com"),
+  metadataBase: new URL("https://firoz-khan.vercel.app"),
   title: {
     default: "Firoz Khan — Full-Stack Developer | Palghar, Maharashtra",
     template: "%s | Firoz Khan",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     "Technical SEO Maharashtra",
     "Freelance Full Stack Developer",
   ],
-  authors: [{ name: "Firoz Khan", url: "https://fkdigitalmedia.com" }],
+  authors: [{ name: "Firoz Khan", url: "https://firoz-khan.vercel.app" }],
   creator: "Firoz Khan",
   publisher: "FK Digital Media",
   formatDetection: {
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://fkdigitalmedia.com",
+    url: "https://firoz-khan.vercel.app",
     siteName: "Firoz Khan Portfolio",
     title: "Firoz Khan — Full-Stack Developer",
     description:
@@ -90,7 +90,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://fkdigitalmedia.com",
+    canonical: "https://firoz-khan.vercel.app",
   },
   verification: {
     google: "vVfJ-JUlDqJQIqx5Y-7JEn1N9w0WqD9uCm3Bo5mNOe4",
@@ -107,11 +107,11 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": "Person",
-        "@id": "https://fkdigitalmedia.com/#person",
+        "@id": "https://firoz-khan.vercel.app/#person",
         name: PERSONAL_INFO.name,
         jobTitle: "Full-Stack Developer",
         description: PERSONAL_INFO.bio,
-        url: "https://fkdigitalmedia.com",
+        url: "https://firoz-khan.vercel.app",
         sameAs: [
           PERSONAL_INFO.socials.linkedin,
           PERSONAL_INFO.socials.instagram,
@@ -144,11 +144,11 @@ export default function RootLayout({
       },
       {
         "@type": "WebSite",
-        "@id": "https://fkdigitalmedia.com/#website",
-        url: "https://fkdigitalmedia.com",
+        "@id": "https://firoz-khan.vercel.app/#website",
+        url: "https://firoz-khan.vercel.app",
         name: "Firoz Khan — Portfolio",
         publisher: {
-          "@id": "https://fkdigitalmedia.com/#person",
+          "@id": "https://firoz-khan.vercel.app/#person",
         },
       },
       {
@@ -156,7 +156,7 @@ export default function RootLayout({
         "@id": "https://fkdigitalmedia.com/#service",
         name: "FK Digital Media — Web Development & SEO",
         founder: {
-          "@id": "https://fkdigitalmedia.com/#person",
+          "@id": "https://firoz-khan.vercel.app/#person",
         },
         url: "https://fkdigitalmedia.com",
         telephone: PERSONAL_INFO.phone,
