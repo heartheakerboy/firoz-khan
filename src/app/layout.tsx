@@ -92,6 +92,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://fkdigitalmedia.com",
   },
+  verification: {
+    google: "vVfJ-JUlDqJQIqx5Y-7JEn1N9w0WqD9uCm3Bo5mNOe4",
+  },
 };
 
 export default function RootLayout({
